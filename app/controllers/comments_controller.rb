@@ -71,6 +71,6 @@ end
     def comment_params
       @idea = Idea.find_by_id @comment.idea_id
       @comments = @idea.comments.all
-      params.require(:comment).permit(:user_name, :body, :idea_id, :picture)
+      params.require(:comment).permit(:user_name, :body, :idea_id, :picture, :reply_id, :user_id)
     end
 end

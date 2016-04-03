@@ -34,5 +34,5 @@
       <%= f.submit "Submit your idea", class: "btn btn-success" %>
     </div>
   </div>
-  
+  <%= f.hidden_field :user_id, value: current_user.id %>
 <% end %>
